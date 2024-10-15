@@ -1,4 +1,5 @@
 # Preprocessing for `pkg/profiles` and `pkg/obsfit`
+![LLC grid interpolation diagram](images/llc_interp_diagram.png)
 ### Authors
 Goldberg, M., Griffin, C., & Reich, S., Processors, LLC.
 
@@ -31,13 +32,12 @@ Presently, there are no known (to the authors) publicly available preprocessing 
 * Create jupyter notebooks demonstrating different uses of the package, examining different routines within the package
 
 ### Tasks
-![Test describing the image](images/llc_interp_diagram.png)
 * Preprocessing routines specific to `obsfit`
   * Distinction between sample and obsfit
 * Preprocessing routines specific to `profiles`
   * Aggregate profiles from multiple tiles [see Ariane's pull request](https://github.com/MITgcm/MITgcm/pull/836)
 * Preprocessing routines shared by `obsfit` and `profiles`:
-  * from _ungridded_ lat/lon, use `pyresample` to compute nearest _gridded_ lat/lon (careful at the poles!) 
+  * from _ungridded_ lat/lon, use e.g. `scipy` or `pyresample` to compute nearest _gridded_ lat/lon (careful at the poles!) 
   * assign_sample_interp: given gridded `point`s, assign LLC interp fields
 * Write tests, documentation, continuous integration?
 
