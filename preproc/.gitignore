@@ -1,0 +1,7 @@
+**/__pycache__
+**/egg*
+**/.ipynb_checkpoints/ 
+./source
+./Makefile
+./build
+./make.bat
